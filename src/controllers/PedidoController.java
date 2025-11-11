@@ -4,7 +4,7 @@ package controllers;
 import java.util.ArrayList;
 
 import models.Pedido;
-import models.Pedidos;
+import models.PedidoRepository;
 
 
 public class PedidoController {
@@ -39,7 +39,7 @@ public class PedidoController {
     
     public String register(Pedido p) {
         
-        Pedidos pedidos = new Pedidos();
+        PedidoRepository pedidos = new PedidoRepository();
         
         String response = pedidos.registrarPedido(p);
         

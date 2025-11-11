@@ -3,7 +3,7 @@ package models;
 import java.util.ArrayList;
 
 
-public class Pedidos {
+public class PedidoRepository {
     
     static public ArrayList<Pedido> pedidos = new ArrayList<>();
     
