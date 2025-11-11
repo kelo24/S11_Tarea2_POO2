@@ -23,7 +23,7 @@ public class PedidoFacade {
             return response;
         }
         
-        // Cálculo de números
+        // Cálculo de impuestos
         ArrayList<Double> price = pCon.calcTaxes(q);
         
         // Registro del pedido
@@ -31,7 +31,6 @@ public class PedidoFacade {
         response += pCon.register(p);
         
         // Factura
-        
         String factura = pCon.generateTicket(p, price);
         response += factura;
         
