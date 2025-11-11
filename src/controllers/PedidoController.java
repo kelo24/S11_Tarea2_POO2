@@ -54,4 +54,11 @@ public class PedidoController {
         
         return factura;
     }
+    
+    public String obtenerPedidos() {
+        
+        PedidoRepository pedidos = new PedidoRepository();
+        
+        return pedidos.obtenerPedidos();
+    }
 }

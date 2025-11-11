@@ -10,12 +10,12 @@ import models.Pedido;
  */
 public class PedidoFacade {
     
+    PedidoController pCon = new PedidoController();
+    
     
     public String registrarPedido(String name, String product, int q) {
         
         String response = "";
-        
-        PedidoController pCon = new PedidoController();
         
         // Validación de stock
         if (!pCon.stockValidation(q)) {
@@ -37,4 +37,9 @@ public class PedidoFacade {
         
         return response;    
     }
+    
+    public String obtenerPedidos() {
+        return pCon.obtenerPedidos();
+    }
+    
 }

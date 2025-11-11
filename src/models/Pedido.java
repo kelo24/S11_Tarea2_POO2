@@ -33,5 +33,11 @@ public class Pedido {
     public void setQ(int q) {
         this.q = q;
     }
+
+    @Override
+    public String toString() {
+        return "Pedido{" + "name=" + name + ", product=" + product + ", q=" + q + '}';
+    }
+    
     
 }
