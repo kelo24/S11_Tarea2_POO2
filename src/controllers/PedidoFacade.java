@@ -1,13 +1,11 @@
 package controllers;
 
 import java.util.ArrayList;
+
 import controllers.PedidoController;
 import models.Pedido;
 
-/**
- *
- * @author kelvincitopkmz
- */
+
 public class PedidoFacade {
     
     PedidoController pCon = new PedidoController();
@@ -24,7 +22,8 @@ public class PedidoFacade {
         }
         
         // Cálculo de impuestos
-        ArrayList<Double> price = pCon.calcTaxes(q);
+        int cantidad = q;
+        ArrayList<Double> price = pCon.calcTaxes(cantidad);
         
         // Registro del pedido
         Pedido p = new Pedido(name, product, q);

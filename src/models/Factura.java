@@ -8,7 +8,6 @@ public class Factura {
     private double igv;
     private double total;
     
-    private Pedido p;
     
     // constructor
     public Factura(double subtotal, double igv, double total) {
