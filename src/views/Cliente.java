@@ -58,6 +58,9 @@ public class Cliente {
                     option = 0;
                     System.out.println("Sistema apagado.");
                     break;
+                default:
+                    System.out.println("Función no existente. Vuelve a intentarlo.");
+                    break;
             }
             
             
